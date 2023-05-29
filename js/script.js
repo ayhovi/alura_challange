@@ -45,7 +45,7 @@ function encrypterText(mensaje){
     let finalText = "";
     if(text === ""){
         swal({
-            text: "Por favor ingresa un texto Guap@",
+            text: "Por favor ingresa un texto",
             icon: "info",
         });
         showElements(); 
@@ -86,7 +86,7 @@ function desencrypterText(mensaje){
     let finalText = "";
     if(text === ""){
         swal({
-            text: "Por favor ingresa un texto Guap@",
+            text: "Por favor ingresa un texto",
             icon: "info",
         });
         showElements();   
@@ -128,9 +128,9 @@ function desencrypterText(mensaje){
 }
 /*Funcion para copiar texto con el boton*/
 function copyText() {
-    let parrafoCopy = document.getElementById("mesageOut"); /*obtenemos el elemento de párrafo deseado*/
-    let contenido = parrafoCopy.innerHTML; /*obtenemos el contenido del elemento de párrafo*/
-    navigator.clipboard.writeText(contenido); /*copiamos el contenido al portapapeles*/
+    let parrafoCopy = document.getElementById("mesageOut");
+    let contenido = parrafoCopy.innerHTML; 
+    navigator.clipboard.writeText(contenido);
 
-    parrafoCopy.textContent = ""; /*limpiamos el contenido del elemento de párrafo*/
+    parrafoCopy.textContent = ""; 
 }
